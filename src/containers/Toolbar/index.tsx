@@ -1,14 +1,15 @@
 import React from 'react';
 import 'asset/styles/Containers/Toolbar.scss';
 import Logo from '../../components/Logo';
+import NavigationItems from '../../components/NavigationItems';
 
 const toolbar: React.FC = () => {
     return (
-        <div className="t-container">
+        <nav className="t-container">
             <Logo />
-            <div>navigation</div>
+            <NavigationItems />
             <div>shoppingcar</div>
-        </div>
+        </nav>
     )
 }
 
