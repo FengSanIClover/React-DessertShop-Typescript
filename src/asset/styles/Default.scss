@@ -1,0 +1,89 @@
+/** 自訂自型 */
+body {
+    font-family: 'Fredoka One', cursive,-apple-system,sans-serif;
+    // font-family: 'Baloo Bhai', cursive,-apple-system,sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /** Normalizes margin, padding */
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  input,
+  p,
+  blockquote,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /** Normalizes font-size for headers */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+  }
+  
+  /** Removes list-style from lists */
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  /** Normalizes font-style and font-weight to normal */
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var {
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  /** Removes list-style from lists */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /** Removes border from fieldset and img */
+  fieldset,
+  img {
+    border: 0;
+  }
+  
+  /** Left-aligns text in caption and th */
+  caption,
+  th {
+    text-align: left;
+  }
+  
+  /** Removes quotation marks from q */
+  q:before,
+  q:after {
+    content: "";
+  }
+  

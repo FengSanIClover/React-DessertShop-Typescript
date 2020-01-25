@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../asset/styles/App.css';
-import Layout from '../Layout';
+import 'asset/styles/Default.scss';
+import Layout from '../../containers/Layout';
 
 const App: React.FC = () => {
 
