@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../../asset/styles/App.css';
+import Layout from '../Layout';
 
 const App: React.FC = () => {
+
   return (
     <div className="App">
-
+      <Layout>
+        children
+      </Layout>
     </div>
   );
 }
