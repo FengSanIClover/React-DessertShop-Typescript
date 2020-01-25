@@ -1,0 +1,11 @@
+@mixin base-container($width) {
+    width: 100%;
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin base-flex($justify-content : center,$align-items:center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
