@@ -8,7 +8,6 @@ const toolbar: React.FC = () => {
         <nav className="t-container">
             <Logo />
             <NavigationItems />
-            <div>shoppingcar</div>
         </nav>
     )
 }

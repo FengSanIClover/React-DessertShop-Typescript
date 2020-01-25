@@ -1,0 +1,11 @@
+@import '../Main/main.scss';
+
+.t-nav-shoppingcar {
+    padding: 30px 40px;
+    color: $base-color-3;
+
+    &:hover {
+        color: $base-color-1;
+        background-color: $base-color-3;
+    }
+}
