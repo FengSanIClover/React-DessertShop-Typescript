@@ -5,11 +5,11 @@ import Layout from '../../containers/Layout';
 const App: React.FC = () => {
 
   return (
-    <div className="App">
+    <>
       <Layout>
         children
       </Layout>
-    </div>
+    </>
   );
 }
 
