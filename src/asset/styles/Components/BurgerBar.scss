@@ -1,0 +1,19 @@
+@import '../Main/main.scss';
+
+.t-nav-burgerbar {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .t-nav-burgerbar { 
+        display: block;
+        padding: 40px;
+        color: $base-color-3;
+        cursor: pointer;
+
+        &:hover {
+            color: $base-color-1;
+            background-color: $base-color-3;
+        }
+    }
+}

@@ -1,12 +1,19 @@
-.t-logo {
+.t-nav-logo {
     width: 100%;
+}
+
+.t-nav-logo__img {
+    width: 250px;
     height: 40px;
     background-image: url('../../images/logo-all-dark.svg');
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 @media (max-width:767px){
-    .t-logo {
+    .t-nav-logo__img {
+        width: 100%;
         background-image: url('../../images/logotype-sm-dark.svg');
+        background-position: center;
     }
 }

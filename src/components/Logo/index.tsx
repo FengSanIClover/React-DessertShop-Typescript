@@ -3,7 +3,9 @@ import 'asset/styles/Components/Logo.scss';
 
 const logo: React.FC = () => {
     return (
-        <div className="t-logo"></div>
+        <div className="t-nav-logo">
+            <div className="t-nav-logo__img"></div>
+        </div>
     )
 }
 
