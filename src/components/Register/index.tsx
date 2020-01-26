@@ -6,8 +6,10 @@ import RegisterInput from '../Register/RegisterInput';
 const register: React.FC = () => {
     return (
         <div className="f-r-container">
-            <RegisterLogo />
-            <RegisterInput />
+            <div className="f-r-register">
+                <RegisterLogo />
+                <RegisterInput />
+            </div>
         </div>
     )
 }

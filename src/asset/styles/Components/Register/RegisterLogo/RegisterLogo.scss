@@ -2,8 +2,6 @@
 
 .f-r-l-container {
     @include base-flex();
-//     height: 100%;
-//    background-color: lightgrey;
 }
 
 .f-r-l-img {
@@ -19,4 +17,10 @@
     line-height: 40px;
     font-size: 1.5rem;
     color: $base-color-1;
+}
+
+@media(max-width:767px) {
+    .f-r-l-container {
+        margin-bottom: 15px;
+    }
 }

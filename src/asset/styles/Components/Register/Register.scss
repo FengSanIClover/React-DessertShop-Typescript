@@ -1,15 +1,26 @@
 @import '../../Main/main.scss';
 
 .f-r-container {
-    @include base-flex(space-around);
+    @include base-flex();
     height: 120px;
     width: 100%;
     background-color: $base-color-3;
 }
 
+.f-r-register {
+    @include base-flex(space-around);
+    width: 940px;
+    margin:0 auto;
+}
+
 @media (max-width:767px) {
     .f-r-container {
-        flex-flow: column;
         height: 190px;
+    }
+
+    .f-r-register {
+        flex-flow: column;
+        width: 100%;
+        margin:0;
     }
 }
