@@ -21,6 +21,8 @@
 
 @media(max-width:767px) {
     .f-r-l-container {
+        width: 100%;
+        justify-content: flex-start;
         margin-bottom: 15px;
     }
 }
