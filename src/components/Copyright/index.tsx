@@ -5,7 +5,13 @@ const copyright: React.FC = () => {
     return (
         <div className="f-c-container">
             <div className="f-c-copyright">
-                <div className="f-c-copyright-uparea">上</div>
+                <div className="f-c-copyright-uparea">
+                    <div className="f-c-copyright-uparea-info">
+                        <div>img</div>
+                        <div>addr</div>
+                    </div>
+                    <div className="f-c-copyright-uparea-img"></div>
+                </div>
                 <div className="f-c-copyright-downarea">
                     <div className="f-c-copyright-downarea-img">
                         <div className="img-at"></div>

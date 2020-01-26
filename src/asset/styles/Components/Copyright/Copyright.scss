@@ -17,14 +17,31 @@
 .f-c-copyright-uparea{
     width: 100%;
     height: 75%;
-    background-color: red;
+    @include base-flex(space-around);
+    background-color: white;
+    padding-top: 30px;
+}
+
+.f-c-copyright-uparea-info{
+    width: 100%;
+    height: 100%;
+    @include base-flex(space-around,flex-start);
+    flex-flow: column;
+    background-color: orange
+}
+
+.f-c-copyright-uparea-img{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../images/lg-今天是個吃甜點的好日子.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .f-c-copyright-downarea{
     @include base-flex(space-around,flex-end);
     width: 100%;
     height: 25%;
-    background-color: lightseagreen;
 }
 
 .f-c-copyright-downarea-img{
@@ -66,5 +83,9 @@
 
     .f-c-copyright-downarea-msg {
         text-align: left;
+    }
+
+    .f-c-copyright-uparea-img {
+        display: none;
     }
 }
