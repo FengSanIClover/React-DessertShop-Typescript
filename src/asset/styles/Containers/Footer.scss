@@ -1,0 +1,8 @@
+@import '../Main/main.scss';
+
+.f-container {
+    width: 100%;
+    @include base-flex();
+    flex-flow: column;
+    background-color: lightpink;
+}
