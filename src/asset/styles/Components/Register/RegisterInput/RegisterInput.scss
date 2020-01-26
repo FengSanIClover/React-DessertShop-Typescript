@@ -1,0 +1,45 @@
+@import '../../../Main/main.scss';
+
+.f-r-i-container {
+    @include base-flex(flex-start);
+    height: 56px;
+    width: 380px;
+    background-color: $base-color-4;
+}
+
+.f-r-i-envelop {
+    color: $base-color-3;
+    font-size: 1.5rem;
+    padding: 16px 0 16px 20px;
+}
+
+.f-r-i-input {
+    color: $base-color-5;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.f-r-i-btn {
+    background-color: $base-color-2;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 65px;
+
+    &:hover {
+        background-color: $base-color-2--hover;
+    }
+}
+
+@media (max-width:767px) {
+    .f-r-i-container {
+        width: 315px;
+        margin: 0 30px;
+    }
+}
+
