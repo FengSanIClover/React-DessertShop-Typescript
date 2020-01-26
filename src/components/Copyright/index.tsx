@@ -7,8 +7,13 @@ const copyright: React.FC = () => {
             <div className="f-c-copyright">
                 <div className="f-c-copyright-uparea">
                     <div className="f-c-copyright-uparea-info">
-                        <div>img</div>
-                        <div>addr</div>
+                        <div className="f-c-copyright-uparea-info-img"></div>
+                        <ul className="f-c-copyright-uparea-info-address">
+                            <li>07-1234-5678</li>
+                            <li>sweetaste@email.com</li>
+                            <li>800 高雄市新興區幸福路 520 號
+                            </li>
+                        </ul>
                     </div>
                     <div className="f-c-copyright-uparea-img"></div>
                 </div>
