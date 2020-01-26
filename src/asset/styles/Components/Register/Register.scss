@@ -1,0 +1,15 @@
+@import '../../Main/main.scss';
+
+.f-r-container {
+    @include base-flex(space-around);
+    height: 120px;
+    width: 100%;
+    background-color: $base-color-3;
+}
+
+@media (max-width:767px) {
+    .f-r-container {
+        flex-flow: column;
+        height: 190px;
+    }
+}
