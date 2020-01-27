@@ -1,0 +1,84 @@
+@import '../../Main/main.scss';
+
+@mixin sideimg ($imgpath,$beforecolor,$title,$titlecolor) {
+    @include base-img($imgpath);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    &::before {
+        content:$title;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        filter:opacity(95%);
+        background-color: $beforecolor;
+        color: $titlecolor;
+        font-size: 1.5rem;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.5rem;
+        @include base-flex();
+    }
+
+    &:hover {
+        &::before {
+            transition: filter;
+            transition-duration: 0.7s;
+            filter: opacity(75%);
+        }
+    }
+}
+
+.h-header {
+   @include base-container(940px);
+   @include base-flex(flex-start,center);
+   flex-flow: column;
+   height: 750px;
+}
+
+
+.h-header-mainimg {
+    width: 100%;
+    height: 500px;
+    @include base-img("img-header-main.jpg");
+    background-size: cover;
+}
+
+.h-header-sideimgbox {
+    @include base-flex();
+    width: 780px;
+    height: 256px;
+    margin-top: -80px;
+}
+
+.h-header-sideimg-left {
+    @include sideimg("img-header-sideimg-1.jpg",$base-color-2,"本日精選",$base-color-3);
+}
+
+.h-header-sideimg-center {
+    @include sideimg("img-header-sideimg-2.jpg",$base-color-3,"人氣推薦",$base-color-1);
+}
+
+.h-header-sideimg-right {
+    @include sideimg("img-header-sideimg-3.jpg",$base-color-3,"新品上市",$base-color-1);
+}
+
+@media(max-width:767px) {
+    .h-header {
+        height: 460px;
+     }
+
+     .h-header-mainimg {
+         height: 280px;
+        background-size:cover;
+    }
+
+     .h-header-sideimgbox {
+        width: 100%;
+        height: 180px;
+        margin: 0;
+    }
+}

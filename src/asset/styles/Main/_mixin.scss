@@ -10,3 +10,8 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+@mixin base-img($imgpath) {
+    background-image: url('../../images/#{$imgpath}');
+    background-repeat: no-repeat;
+}
