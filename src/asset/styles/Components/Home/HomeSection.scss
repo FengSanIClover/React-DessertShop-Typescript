@@ -1,0 +1,87 @@
+@import '../../Main/main.scss';
+
+.h-s-container {
+    height: 420px;
+    width: 100%;
+    background-color: $base-color-4;
+    margin-bottom: 90px;
+}
+
+.h-s-layout {
+    @include base-container(940px);
+    @include base-flex(space-between);
+    height: 420px;
+}
+
+.h-s-leftlogo {
+   @include base-img("img-header-section1-left.jpg");
+   background-size: cover;
+   height:460px;
+   width: 460px;
+}
+
+.h-s-centermsg {
+    width: 260px;
+    writing-mode: vertical-rl;
+    padding: 4.3rem 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    p {
+        color: $base-color-5;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.h-s-rightlogo {
+    @include base-img("lg-為什麼選擇了做甜點.svg");
+    height:460px;
+    width: 90px;
+}
+
+@media(max-width:767px) {
+    .h-s-container {
+        height: 720px;
+        width: 100%;
+        background-color: $base-color-1;
+        margin-bottom: 0;
+    }
+
+    .h-s-layout {
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       flex-flow: column;
+       height: 660px;
+    }
+
+    .h-s-leftlogo {
+        @include base-img("img-header-section1-left.jpg");
+        order: 2;
+        height:250px;
+        width: 100%;
+        background-color: $base-color-4;
+     }
+
+     .h-s-rightlogo {
+        @include base-img("sm-橫式-為什麼選擇了做甜點.svg");
+        background-position: center;
+        order: 1;
+        height:60px;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .h-s-centermsg {
+        width: 100%;
+        writing-mode:horizontal-tb;
+        padding: 2rem 0;
+        order: 3;
+        background-color: $base-color-4;
+        p {
+            color: $base-color-5;
+            margin-left: 0;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

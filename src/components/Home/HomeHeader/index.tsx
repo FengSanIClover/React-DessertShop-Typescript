@@ -1,5 +1,5 @@
 import React from 'react';
-import 'asset/styles/Components/Home/Header.scss';
+import 'asset/styles/Components/Home/HomeHeader.scss';
 
 const header: React.FC = () => {
     return (
