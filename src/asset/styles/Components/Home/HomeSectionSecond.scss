@@ -1,0 +1,87 @@
+@import '../../Main/main.scss';
+
+.h-s-s-container {
+    height: 420px;
+    width: 100%;
+    background-color: $base-color-4;
+    margin-bottom: 50px;
+}
+
+.h-s-s-layout {
+    @include base-container(940px);
+    @include base-flex(space-between);
+    height: 100%;
+}
+
+.h-s-s-msg {
+    color: $base-color-5;
+    width: 30%;
+    writing-mode: vertical-rl;
+    padding: 4.3rem 0px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    p {
+        margin: 0 0 2rem 2rem ;
+    }
+}
+
+.h-s-s-logo-1 {
+    @include base-img("lg-為什麼一定要吃甜點.svg");
+    width:10%;
+    height: 460px;
+}
+
+.h-s-s-logo-2 {
+    @include base-img("img-header-section2-right.jpg");
+    background-size: cover;
+    width:50%;
+    height: 460px;
+}
+
+@media (max-width:767px) {
+    .h-s-s-container {
+        height: 650px;
+        width: 100%;
+        background-color: $base-color-1;
+        margin-bottom: 0px;
+    }
+
+    .h-s-s-layout {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+    }
+
+    .h-s-s-logo-1 {
+        @include base-img("sm-橫式-為什麼一定要吃甜點.svg");
+        background-position: center;
+        width:100%;
+        height: 10%;
+        margin: 2rem 0;
+        order: 1;
+    }
+
+    .h-s-s-logo-2 {
+        @include base-img("img-header-section2-right.jpg");
+        // background-size: cover;
+        width:100%;
+        height: 35%;
+        order: 2;
+    }
+
+    .h-s-s-msg {
+        background-color: $base-color-4;
+        color: $base-color-5;
+        width: 100%;
+        height: 35%;
+        writing-mode:horizontal-tb;
+        padding: 2rem 0px;
+        order: 3;
+        p {
+            margin: 0 0 0.5rem 0 ;
+        }
+    }
+}
