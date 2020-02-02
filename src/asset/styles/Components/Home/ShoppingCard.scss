@@ -4,6 +4,22 @@
     width: 31%;
     margin: 0 1% 5% 1%;
     height: 430px;
+    position: relative;
+
+    &::before {
+        content: "本日精選";
+        @include base-flex(space-around);
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 15%;
+        height: 25%;
+        font-size: 1.2rem;
+        color: $base-color-1;
+        letter-spacing: 5px;
+        background-color: $base-color-3;
+    }
 }
 
 .s-card-img {
