@@ -1,0 +1,7 @@
+@import '../../Main/main.scss';
+
+.h-o-layout {
+    @include base-container(940px);
+    @include base-flex(flex-start);
+    flex-wrap:wrap;
+}

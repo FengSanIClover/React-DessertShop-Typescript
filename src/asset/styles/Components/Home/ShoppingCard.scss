@@ -1,0 +1,52 @@
+@import '../../Main/main.scss';
+
+.s-card-container {
+    width: 31%;
+    margin: 0 1% 5% 1%;
+    height: 430px;
+}
+
+.s-card-img {
+    width: 100%;
+    height: 315px;
+}
+
+.s-card-prodinfo {
+    @include base-flex(space-between);
+    p {
+        font-size: 1.5rem;
+        line-height: 56px;
+        color: $base-color-3;
+        text-align: center;
+        border-right: 1px solid $base-color-4;
+        border-left: 1px solid $base-color-4;
+        margin:-5px 0 0 0;
+        width: 100%;
+        height: 56px;
+    }
+}
+
+.s-card-orderbtn {
+    width: 100%;
+    height: 65px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: $base-color-3;
+    background-color: $base-color-4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $base-color-4--hover;
+    }
+}
+
+@media(max-width:767px) {
+    .s-card-container {
+        width: 96%;
+        margin: 2%;
+        height: 100%;
+    }
+}
