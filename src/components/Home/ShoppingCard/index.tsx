@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'asset/styles/Components/Home/ShoppingCard.scss';
 
 interface IInitProps {
@@ -7,9 +7,28 @@ interface IInitProps {
     prodPrice: number
 }
 
-const shoppingCard: React.FC<IInitProps> = (props) => {
+const ShoppingCard: React.FC<IInitProps> = (props) => {
+
+    const [isFavor, setIsfavor] = useState(false);
+    const [favorIcon, setFavorIcon] = useState(<i className="far fa-heart"></i>)
+
+
+    const favorHandler = () => {
+        const updateFavor = !isFavor;
+        if (updateFavor) {
+            setFavorIcon(<i className="fas fa-heart h-o-img-heart--favor"></i>);
+        } else {
+            setFavorIcon(<i className="far fa-heart"></i>);
+        }
+
+        setIsfavor(updateFavor);
+    }
+
     return (
         <div className="s-card-container">
+            <div className="h-o-img-heart" onClick={favorHandler}>
+                {favorIcon}
+            </div>
             <img className="s-card-img" src={props.imgPath} alt="甜點" />
             <div className="s-card-prodinfo">
                 <p>{props.prodName}</p>
@@ -20,4 +39,4 @@ const shoppingCard: React.FC<IInitProps> = (props) => {
     )
 }
 
-export default shoppingCard;
+export default ShoppingCard;

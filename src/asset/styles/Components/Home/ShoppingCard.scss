@@ -20,6 +20,22 @@
         letter-spacing: 5px;
         background-color: $base-color-3;
     }
+
+    .h-o-img-heart {
+        @include base-flex(flex-start);
+        position: absolute;
+        top: 0;
+        right:0;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $base-color-3;
+        width: 15%;
+        height: 15%;
+    }
+}
+
+.h-o-img-heart--favor {
+    color: #FF9797;
 }
 
 .s-card-img {
